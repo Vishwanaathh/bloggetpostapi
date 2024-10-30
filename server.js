@@ -3,7 +3,7 @@ const app=express();
 const cors=require('cors');
 const arouter=require('./routes/articles');
 const mongoose=require('mongoose');
-mongoose.connect('mongodb+srv://admin:root@cluster0.kwlzyeo.mongodb.net/ARTICLE?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect()
 .then(()=>{
     console.log('connected to db');
 });
